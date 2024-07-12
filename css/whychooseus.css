@@ -1,0 +1,48 @@
+.whychooseus {
+    width: 100%;
+    padding: 3% 15%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 2em;
+}
+
+.whychooseus h4 {
+    color: var(--dominant);
+    font-weight: 500;
+}
+
+.whychooseus h1 {
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+
+.whychooseus .parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whychooseus .child {
+    width: 20%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    /* margin: 0 10px; */
+}
+
+.whychooseus .child h4 {
+    color: black;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.whychooseus .child p {
+    font-size: smaller;
+
+}

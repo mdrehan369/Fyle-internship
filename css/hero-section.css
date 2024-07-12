@@ -1,0 +1,224 @@
+:root {
+    --dominant: #FF3147
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: 100vw;
+    font-family: "Poppins", serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    width: 100%;
+    padding: 0% 15%;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 8rem; */
+}
+
+.hero-section img {
+    /* width: 487px; */
+    height: 80%;
+}
+
+.hero-section .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1em;
+}
+
+.hero-section .left h4 {
+    color: var(--dominant);
+    font-weight: 500;
+}
+
+.hero-section .left h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.hero-section .left p {
+    font-size: small;
+    font-weight: bold;
+    color: #808080;
+}
+
+button {
+    background-color: var(--dominant);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 0.6em;
+    color: white;
+    border-radius: 3px;
+    letter-spacing: 1.4px;
+    border: 2px solid var(--dominant);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+
+
+footer {
+    background-color: var(--dominant);
+    width: 100%;
+    padding: 0 15%;
+    box-sizing: border-box;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    width: 100%;
+}
+
+
+#popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popup form {
+    width: 450px;
+    height: 362px;
+    position: relative;
+    padding: 2em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border: 2px solid #F1F1F1;
+}
+
+#popup form h1 {
+    align-self: flex-start;
+    font-size: 1.8em;
+    font-weight: 600;
+
+}
+
+#popup #close {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #F6F6F6;
+    font-size: larger;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#popup form .names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #c8c8c8;
+    width: 100%;
+    outline: none;
+    padding: 5px;
+}
+
+input::placeholder {
+    color: #717171;
+    font-weight: 500;
+    font-size: small;
+}
+
+#popup form .cb {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+    font-size: smaller;
+    color: #808080;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 5px;
+    margin-right: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 0.1rem;
+    border: 2px solid var(--dominant);
+    border-radius: 3px;
+}
+
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem;
+    clip-path: polygon(0% 50%, 40% 100%, 100% 0%);
+    transform: scale(0);
+    background-color: white;
+}
+  
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}  
+
+input[type="checkbox"]:checked {
+    background-color: var(--dominant);
+}
+
+.parentp {
+    position: relative;
+    width: 100%;
+}
+
+#popup form button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: var(--dominant);
+    text-align: center;
+    font-size: medium;
+}
+
+#popup form button:hover {
+    background-color: transparent;
+    color: black;
+}
